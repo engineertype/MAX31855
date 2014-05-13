@@ -1,0 +1,23 @@
+This is the GitHub source code repository for the Arduino MAX31855 library and example code for Arduino.
+
+This library offers advantages over other MAX31855 libraries:
+a. Returns both the junction (IC) and thermocouple temperatures
+b. Handles negative temperatures
+c. Returns thermocouple error codes, like open, short-to-ground and short-to-vcc
+d. Returns an error if the MAX31855 isn’t communicating (wiring issue?)
+
+In this folder are:
+1. README - this file
+2. MAX31855—1-schematic.png - Hardware schematic for the MAX31855 board
+3. MAX31855—2-schematic.png - Hardware schematic for the dual MAX31855 board
+4. MAX31855—4-schematic.png - Hardware schematic for the quad MAX31855 board
+5. MAX31855 folder - the Arduino library and example code for driving the MAX31855
+
+The breakout boards for the MAX31855 is available from www.whizoo.com.  
+
+To install the MAX31855 library, please refer to:
+http://arduino.cc/en/Guide/Libraries
+
+Peter Easton 2014
+Whizoo.com
+
