@@ -13,7 +13,7 @@ In this folder are:
 4. MAX31855—4-schematic.png - Hardware schematic for the quad MAX31855 board
 5. MAX31855 folder - the Arduino library and example code for driving the MAX31855
 
-The breakout boards for the MAX31855 is available from www.whizoo.com.  
+The breakout boards for the MAX31855 are available from www.whizoo.com and eBay.com.  
 
 To install the MAX31855 library, please refer to:
 http://arduino.cc/en/Guide/Libraries
