@@ -1,5 +1,8 @@
 This is the GitHub source code repository for the Arduino MAX31855 library and example code for Arduino.
 
+Maxim has released a newer version of this IC called MAX31856.  You can find the library here:
+https://github.com/engineertype/MAX31856
+
 This library offers advantages over other MAX31855 libraries:
 a. Returns both the junction (IC) and thermocouple temperatures
 b. Handles negative temperatures
@@ -13,11 +16,21 @@ In this folder are:
 4. MAX31855—4-schematic.png - Hardware schematic for the quad MAX31855 board
 5. MAX31855 folder - the Arduino library and example code for driving the MAX31855
 
-The breakout boards for the MAX31855 are available from www.whizoo.com and eBay.com.  
-
 To install the MAX31855 library, please refer to:
 http://arduino.cc/en/Guide/Libraries
 
-Peter Easton 2014
-Whizoo.com
+Breakout boards are available on eBay.  Please buy them and support my open-source efforts!
+5V Single    http://www.ebay.com/itm/301193478531
+5V Dual      http://www.ebay.com/itm/301214589468
+5V Quad      http://www.ebay.com/itm/301200852126
+5V Octo      http://www.ebay.com/itm/251802776832
+3.3V Single  http://www.ebay.com/itm/301208636998
+3.3V Dual    http://www.ebay.com/itm/301208677221
+3.3V Quad    http://www.ebay.com/itm/251704050290
+3.3V Octo    http://www.ebay.com/itm/301498690366
 
+Looking to build a reflow oven?  Check out the build guide:
+http://whizoo.com/reflowoven
+
+Peter Easton 2015
+Whizoo.com
