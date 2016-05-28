@@ -151,7 +151,7 @@ double	MAX31855::readJunction(unit_t	unit)
 
     // Is this a MAX31855?  Bits 3 and 17 must be zero
     if (data & 0x20008)
-    return NO_MAX31855;
+        return NO_MAX31855;
 
     // Strip fault data bits & reserved bit
     data = data >> 4;
