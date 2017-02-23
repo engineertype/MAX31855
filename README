@@ -15,22 +15,25 @@ In this folder are:
 3. MAX31855—2-schematic.png - Hardware schematic for the dual MAX31855 board
 4. MAX31855—4-schematic.png - Hardware schematic for the quad MAX31855 board
 5. MAX31855 folder - the Arduino library and example code for driving the MAX31855
+6. MAX31855_RPi - Sample code for the Raspberry Pi (Octo boards)
 
 To install the MAX31855 library, please refer to:
 http://arduino.cc/en/Guide/Libraries
 
 Breakout boards are available on eBay.  Please buy them and support my open-source efforts!
-5V Single    http://www.ebay.com/itm/301193478531
+5V Single    http://www.ebay.com/itm/301193478531 (sold out)
 5V Dual      http://www.ebay.com/itm/301214589468
-5V Quad      http://www.ebay.com/itm/301200852126
-5V Octo      http://www.ebay.com/itm/251802776832
-3.3V Single  http://www.ebay.com/itm/301208636998
-3.3V Dual    http://www.ebay.com/itm/301208677221
-3.3V Quad    http://www.ebay.com/itm/251704050290
+5V Quad      http://www.ebay.com/itm/301200852126 (sold out)
+5V Octo      http://www.ebay.com/itm/251802776832 
+3.3V Single  http://www.ebay.com/itm/301208636998 (sold out)
+3.3V Dual    http://www.ebay.com/itm/301208677221 (sold out)
+3.3V Quad    http://www.ebay.com/itm/251704050290 (sold out)
 3.3V Octo    http://www.ebay.com/itm/301498690366
+
+Take a look at the new MAX31856 boards.  Much better accuracy and flexibility!
 
 Looking to build a reflow oven?  Check out the build guide:
 http://whizoo.com/reflowoven
 
-Peter Easton 2016
+Peter Easton 2017
 Whizoo.com

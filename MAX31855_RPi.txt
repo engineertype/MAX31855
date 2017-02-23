@@ -1,0 +1,43 @@
+Provided by a helpful customer - thanks!
+
+Here is the code written in python tested and working with the device on raspberry pi. You can adjust the sleep time as you want but you cannot go any lower than .125 ms from my experience.
+
+import time
+
+import Adafruit_GPIO.SPI as SPI
+import Adafruit_MAX31855.MAX31855 as MAX31855
+import RPi.GPIO as GPIO
+
+# Define a function to convert celsius to fahrenheit.
+def c_to_f(c):
+return c * 9.0 / 5.0 + 32.0
+
+# Raspberry Pi software SPI configuration.
+CLK = 25
+CS = 24
+DO = 18
+sensor = MAX31855.MAX31855(CLK, CS, DO)
+T0 = 17
+T1 = 27
+T2 = 22
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(T0, GPIO.OUT)
+GPIO.setup(T1, GPIO.OUT)
+GPIO.setup(T2, GPIO.OUT)
+tc = 0
+# Loop printing measurements every second.
+print('Press Ctrl-C to quit.')
+while True:
+GPIO.output(T0, tc & 1<<0)
+GPIO.output(T1, tc & 1<<1)
+GPIO.output(T2, tc & 1<<2)
+time.sleep(0.125)
+temp = sensor.readTempC()
+internal = sensor.readInternalC()
+print('Sensor', tc)
+print('{1:0.3F}'.format(temp, c_to_f(temp)))
+#print('Thermocouple Temperature: {0:0.3F}*C / {1:0.3F}*F'.format(temp, c_to_f(temp)))
+#print(' Internal Temperature: {0:0.3F}*C / {1:0.3F}*F'.format(internal, c_to_f(internal)))
+tc = tc+1
+if tc == 4:
+tc=0
